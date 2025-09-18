@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Custom utilities */
+@layer utilities {
+  .bg-secondary-100 {
+    background-color: #f4f3f1;
+  }
+  .bg-primary-100 {
+    background-color: #282624;
+  }
+  .bg-accent-100 {
+    background-color: #e8eced;
+  }
+
+  .bg-recipe-100 {
+    background-color: #efefef;
+  }
+
+  .text-secondary-200 {
+    color: #000000;
+  }
+  .text-primary-200 {
+    color: #facb3b;
+  }
+  .text-accent-200 {
+    color: #ffffff;
+  }
+}
+
+.nav-btn {
+  background-color: #facb3b;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: #facb3b;
+  color: #282624;
+  padding: 12px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 200;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: #282624;
+  color: #facb3b;
+  padding: 12px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 200;
+}
+
+.recipe-card h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #282624;
+}
+
+.recipe-card img {
+  padding: 10px 0;
+}
+
+.btn {
+  background-color: #282624;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.see-more-btn {
+  background-color: #facb3b;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.related-recipe-card {
+  @apply relative;
+}
+
+.btn-badge {
+  @apply absolute bottom-7 left-7;
+  background-color: #282624;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.related-recipe-card img {
+  padding-top: 10px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+.related-recipe-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282624;
+}
+
+.related-recipe-btn i {
+  background-color: #facb3b;
+  gap: 10px;
+}
