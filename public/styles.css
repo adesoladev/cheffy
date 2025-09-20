@@ -26,6 +26,7 @@
     --leading-tight: 1.25;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -257,9 +258,6 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
-  .w-96 {
-    width: calc(var(--spacing) * 96);
-  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -321,8 +319,8 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-x-24 {
-    column-gap: calc(var(--spacing) * 24);
+  .gap-x-11 {
+    column-gap: calc(var(--spacing) * 11);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -332,6 +330,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -476,6 +477,11 @@
       display: flex;
     }
   }
+  .md\:w-96 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 96);
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -499,6 +505,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:gap-x-28 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 28);
     }
   }
   .md\:self-end {
@@ -571,7 +582,7 @@
   color: #282624;
 }
 .recipe-card img {
-  padding: 10px 0;
+  margin: 18px 0;
 }
 .btn {
   background-color: #282624;
@@ -600,7 +611,7 @@
   cursor: pointer;
 }
 .related-recipe-card img {
-  padding-top: 10px;
+  margin-top: 18px;
 }
 footer ul li {
   margin-bottom: 10px;
